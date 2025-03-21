@@ -149,7 +149,7 @@ app.get('/view-post', isAuthenticated,async(req,res) => {
 })
 
 // Start the server
-const PORT = 3000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log('Listening to port 3000');
 });
